@@ -1,0 +1,16 @@
+-Midifile constructor(creating track): MIDITime(bpm,filepath.midi)
+    ex. mymidi = MIDITime(120,'test.midi')
+
+-Single note template: [time, pitch, velocity, duration]
+    #offset = on with note will be played expressed as beats [0-max_int] the later note is played the track is longer
+    #pitch = note name A4,C5 expressed as MIDI number [21-108]
+    #velocity = volume [0-127]
+    #length = expressed in beats [0-12]
+
+-Creating list of notes:
+    ex. mynotes = [
+        [0, 60, 127, 3],
+        [6, 80, 127, 3]
+    ]
+-Appending notes list to the track:
+    mymidi.add_track(mynotes)
